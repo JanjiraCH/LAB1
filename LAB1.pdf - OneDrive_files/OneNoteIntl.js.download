@@ -1,0 +1,1516 @@
+Type.registerNamespace('OneNoteIntl');
+
+OneNoteIntl.OneNoteStrings = function OneNoteIntl_OneNoteStrings() {
+    /// <summary>
+    /// Contains the localizable strings for the OneNote application
+    /// All string will be formatted with the following substitutions:
+    /// {webappfull} is the long name of the Web client application; e.g., "Microsoft OneNote Online"
+    /// {webappshort} is the short name of the Web client application; e.g. "OneNote Online")
+    /// {appshort} is the short name of the application (e.g. "OneNote")
+    /// {richclientfull} is the name of the equivalent rich client (e.g. "Microsoft OneNote")
+    /// {doctype} is the friendly name of the file/document type (e.g. "document", "presentation")
+    /// {doctypetitlecase} is the friendly name of the file/document type in title case (e.g. "Document", "Presentation")
+    /// {doctypeplural} is the plural form of {doctype} (e.g. "documents", "presentations")
+    /// {subdoctype} is the friendly name of the sub document type (e.g. "page", "slide").
+    /// </summary>
+    /// <field name="L_BrowseVersions" type="String" static="true">
+    /// </field>
+    /// <field name="L_Camera" type="String" static="true">
+    /// button text for inserting picture from camera option in ribbon
+    /// </field>
+    /// <field name="L_CopyNotebook" type="String" static="true">
+    /// button text for copy to onedrive button in toolbar and ribbon
+    /// </field>
+    /// <field name="L_CopyToCloudDescription" type="String" static="true">
+    /// button description for copy to onedrive button in ribbon
+    /// </field>
+    /// <field name="L_DeleteSectionConfirmationTitle" type="String" static="true">
+    /// </field>
+    /// <field name="L_DeleteSectionConfirmationDescription" type="String" static="true">
+    /// </field>
+    /// <field name="L_Edit" type="String" static="true">
+    /// </field>
+    /// <field name="L_EditDocument" type="String" static="true">
+    /// </field>
+    /// <field name="L_EditInOneNote" type="String" static="true">
+    /// </field>
+    /// <field name="L_EditInOneNoteDescription" type="String" static="true">
+    /// </field>
+    /// <field name="L_OpenInApp" type="String" static="true">
+    /// </field>
+    /// <field name="L_OpenInWebApp" type="String" static="true">
+    /// {Placeholder="{webappshort}"}
+    /// </field>
+    /// <field name="L_EditInOneNoteWebAppDescription" type="String" static="true">
+    /// {Placeholder="{webappshort}"}
+    /// </field>
+    /// <field name="L_EmptyRecycleBinFishbowlTitle" type="String" static="true">
+    /// </field>
+    /// <field name="L_EmptyRecycleBinFishbowlText" type="String" static="true">
+    /// </field>
+    /// <field name="L_FileAttachment" type="String" static="true">
+    /// Name of button in toolbar for attaching a file.
+    /// </field>
+    /// <field name="L_FilePrintout" type="String" static="true">
+    /// Name of button in ribbon for inserting a file printout
+    /// </field>
+    /// <field name="L_OneDriveFileAttachment" type="String" static="true">
+    /// Name of button in ribbon for inserting a file from OneDrive
+    /// </field>
+    /// <field name="L_FileMenuEdit" type="String" static="true">
+    /// </field>
+    /// <field name="L_FontColorDarkGreenHighlight" type="String" static="true">
+    /// </field>
+    /// <field name="L_GroupAuthors" type="String" static="true">
+    /// </field>
+    /// <field name="L_GroupNavigation" type="String" static="true">
+    /// Title of Navigation group in ribbon view tab.
+    /// </field>
+    /// <field name="L_GroupBasicText" type="String" static="true">
+    /// </field>
+    /// <field name="L_GroupBorders" type="String" static="true">
+    /// </field>
+    /// <field name="L_GroupFiles" type="String" static="true">
+    /// Title of toolbar group for attaching files.
+    /// </field>
+    /// <field name="L_GroupNotebook" type="String" static="true">
+    /// </field>
+    /// <field name="L_GroupNotebookViews" type="String" static="true">
+    /// </field>
+    /// <field name="L_GroupPageSetup" type="String" static="true">
+    /// </field>
+    /// <field name="L_GroupTags" type="String" static="true">
+    /// </field>
+    /// <field name="L_GroupVersions" type="String" static="true">
+    /// </field>
+    /// <field name="L_HideSpellingErrors" type="String" static="true">
+    /// </field>
+    /// <field name="L_HideBorders" type="String" static="true">
+    /// </field>
+    /// <field name="L_MenuAlignment" type="String" static="true">
+    /// </field>
+    /// <field name="L_NoteTagMark" type="String" static="true">
+    /// </field>
+    /// <field name="L_NavigationOptions" type="String" static="true">
+    /// Name of Navigation options in view ribbon tab.
+    /// </field>
+    /// <field name="L_ShowSectionsAndPages" type="String" static="true">
+    /// Indicating that the navpane will show both sections and pages
+    /// </field>
+    /// <field name="L_ShowOnlyPages" type="String" static="true">
+    /// Indicating that the navpane will show only pages
+    /// </field>
+    /// <field name="L_HideAll" type="String" static="true">
+    /// Indicating that the navpane will be hidden
+    /// </field>
+    /// <field name="L_NoteTagClear" type="String" static="true">
+    /// </field>
+    /// <field name="L_NoteTagRemove" type="String" static="true">
+    /// </field>
+    /// <field name="L_NoteTags" type="String" static="true">
+    /// </field>
+    /// <field name="L_PageColor" type="String" static="true">
+    /// </field>
+    /// <field name="L_Print" type="String" static="true">
+    /// </field>
+    /// <field name="L_PrintDescription" type="String" static="true">
+    /// </field>
+    /// <field name="L_ShowAuthors" type="String" static="true">
+    /// </field>
+    /// <field name="L_ShowVersions" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncStatusSyncing" type="String" static="true">
+    /// Used to indicate that there are unsaved changes that needs to be replicated to server.
+    /// </field>
+    /// <field name="L_SyncStatusSyncComplete" type="String" static="true">
+    /// Used to indicate that there are no unsaved changes that needs to be replicated to server.
+    /// </field>
+    /// <field name="L_SyncStatusSyncFailed" type="String" static="true">
+    /// Used to indicate that there are unsaved changes that failed to be replicated to server.
+    /// </field>
+    /// <field name="L_DeletedNotes" type="String" static="true">
+    /// Title for 'Deleted Notes' button in Ribbon
+    /// </field>
+    /// <field name="L_PageTemplates" type="String" static="true">
+    /// Name for Templates addin
+    /// </field>
+    /// <field name="L_DeletedPages" type="String" static="true">
+    /// Section name for Deleted Pages
+    /// </field>
+    /// <field name="L_PermanentlyDeletePage" type="String" static="true">
+    /// Displayed on 'Permanently Delete' action in recycle bin.
+    /// </field>
+    /// <field name="L_RestorePage" type="String" static="true">
+    /// Displayed on 'Restore Page' action in recycle bin.
+    /// </field>
+    /// <field name="L_RestoreDialogTitle" type="String" static="true">
+    /// Displayed on 'Restore Page' dialog
+    /// </field>
+    /// <field name="L_BackToSectionButtonText" type="String" static="true">
+    /// Back To Section button text
+    /// </field>
+    /// <field name="L_DeletePageSucceedToastMessage" type="String" static="true">
+    /// Toast message when we have moved a page to recycle bin. {Placeholder="{0}"} Placeholder 0 will be replaced by the name of the page
+    /// </field>
+    /// <field name="L_DeletePageFailureToastMessage" type="String" static="true">
+    /// Toast message when failed to move a page to recycle bin. {Placeholder="{0}"} Placeholder 0 will be replaced by the name of the page
+    /// </field>
+    /// <field name="L_RestorePageSucceedToastMessage" type="String" static="true">
+    /// Toast message when restoring a page from recycle bin. {Placeholder="{0}"} Placeholder 0 will be replaced by the name of the page. {Placeholder="{1}"} Placeholder 1 will be replaced by the name of the section.
+    /// </field>
+    /// <field name="L_RestorePageFailureToastMessage" type="String" static="true">
+    /// Toast message when failed to restore a page to recycle bin. {Placeholder="{0}"} Placeholder 0 will be replaced by the name of the page. {Placeholder="{1}"} Placeholder 1 will be replaced by the name of the section.
+    /// </field>
+    /// <field name="L_GroupHistory" type="String" static="true">
+    /// History Group Text
+    /// </field>
+    /// <field name="L_DeletePagePermanentlyConfirmation" type="String" static="true">
+    /// Warning message when trying to delete a page from password protected sections
+    /// </field>
+    /// <field name="L_DeletePagesPermanentlyConfirmation" type="String" static="true">
+    /// Warning message when trying to delete multiple pages that will be deleted permamently
+    /// </field>
+    /// <field name="L_EduDeleteLockedPagePermanentlyConfirmation" type="String" static="true">
+    /// Warning message when trying to delete EDU pages that have locks, assignment id, or source id.
+    /// </field>
+    /// <field name="L_UnableToMovePageToDeletedNotesDialogTitle" type="String" static="true">
+    /// Dialog label when we are unable to move a page to the Deleted Notes section
+    /// </field>
+    /// <field name="L_UnableToMovePageToDeletedNotesDialogBody" type="String" static="true">
+    /// Dialog label when we are unable to move a page to the Deleted Notes section
+    /// </field>
+    /// <field name="L_NetworkDisconnectedToastMessage" type="String" static="true">
+    /// Toast warning when network connection is no longer detected
+    /// </field>
+    /// <field name="L_NetworkConnectedToastMessage" type="String" static="true">
+    /// Toast notification when network connection is restored
+    /// </field>
+    /// <field name="L_RenameSection" type="String" static="true">
+    /// Option to rename the selected section
+    /// </field>
+    /// <field name="L_DeleteSection" type="String" static="true">
+    /// Option to delete the selected section from a notebook
+    /// </field>
+    /// <field name="L_DeletePage" type="String" static="true">
+    /// Option to delete the selected page from a section
+    /// </field>
+    /// <field name="L_MakeSubpage" type="String" static="true">
+    /// Option to make the selected page a subpage in the page list of a section
+    /// </field>
+    /// <field name="L_PromoteSubpage" type="String" static="true">
+    /// Option to promote the selected subpage to a page or subpage of higher level in the page list of a section
+    /// </field>
+    /// <field name="L_SaveAs" type="String" static="true">
+    /// Option to save the selected picture as...
+    /// </field>
+    /// <field name="L_AltTextButton" type="String" static="true">
+    /// </field>
+    /// <field name="L_MenuShadingColor" type="String" static="true">
+    /// Label on the button for Shading
+    /// </field>
+    /// <field name="L_NewPage" type="String" static="true">
+    /// </field>
+    /// <field name="L_NewSection" type="String" static="true">
+    /// </field>
+    /// <field name="l_NewSectionButtonText" type="String" static="true">
+    /// Button label for a new section. This text will be next to a (+) icon.
+    /// </field>
+    /// <field name="l_NewPageButtonText" type="String" static="true">
+    /// Button label for a new page. This text will be next to a (+) icon.
+    /// </field>
+    /// <field name="l_NotebooksButtonText" type="String" static="true">
+    /// </field>
+    /// <field name="l_NotebooksButtonAriaLabel" type="String" static="true">
+    /// </field>
+    /// <field name="l_NotebooksButtonTooltip" type="String" static="true">
+    /// </field>
+    /// <field name="l_NavViewExpandButtonTooltip" type="String" static="true">
+    /// </field>
+    /// <field name="l_Download" type="String" static="true">
+    /// </field>
+    /// <field name="l_EmbeddedFileAltTextDialogLabel" type="String" static="true">
+    /// </field>
+    /// <field name="l_PageContentsLabel" type="String" static="true">
+    /// </field>
+    /// <field name="l_PasswordProtectedSectionDialogTitle" type="String" static="true">
+    /// </field>
+    /// <field name="l_PasswordProtectedSectionDialogDescription" type="String" static="true">
+    /// </field>
+    /// <field name="l_PasswordProtectedSectionDialogEnterPassword" type="String" static="true">
+    /// </field>
+    /// <field name="l_PasswordProtectedSectionWrongPasswordText" type="String" static="true">
+    /// </field>
+    /// <field name="l_PasswordProtectedSectionRequestFailedText" type="String" static="true">
+    /// </field>
+    /// <field name="l_SessionExpiredActionRequiredText" type="String" static="true">
+    /// </field>
+    /// <field name="l_SessionExpiredSaveWorkInstructionText" type="String" static="true">
+    /// </field>
+    /// <field name="l_SessionExpiredUnsavedWork" type="String" static="true">
+    /// </field>
+    /// <field name="l_SessionExpiredBusinessBarText" type="String" static="true">
+    /// </field>
+    /// <field name="l_SessionExpiredDialogTitle" type="String" static="true">
+    /// </field>
+    /// <field name="l_SessionExpiredDialogButtonContinue" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_0" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_1" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_2" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_3" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_4" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_5" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_6" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_7" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_8" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_9" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_10" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_11" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_12" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_13" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_14" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_15" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_16" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_17" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_18" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_19" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_20" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_21" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_22" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_23" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_24" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_25" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_26" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_27" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_28" type="String" static="true">
+    /// </field>
+    /// <field name="l_NoteTag_OutlookTaskTooltip" type="String" static="true">
+    /// Outlook task tooltip string, the placeholder is the due date
+    /// </field>
+    /// <field name="l_NoteTag_OutlookTaskTooltipNoDueDate" type="String" static="true">
+    /// </field>
+    /// <field name="L_faShare_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_faAbout_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_btnAltText_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_automatic_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT0_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT1_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT2_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT3_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT4_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT5_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT6_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT7_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT8_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT9_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT10_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT11_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT12_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT13_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT14_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT15_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT16_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT17_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT18_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT19_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT20_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT21_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT22_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT23_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT24_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT25_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT26_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT27_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_NT28_FriendlyLabel" type="String" static="true">
+    /// </field>
+    /// <field name="L_PeopleWell_Location_Unknown" type="String" static="true">
+    /// Used to indicate that another person is working in the notebook, but we don't know where. The indication consists of two lines, the name of the other person is in the first line, and this string is in the second line.
+    /// </field>
+    /// <field name="L_PeopleWell_Location_ThisPage" type="String" static="true">
+    /// Used to indicate that another person is working on the same page of the notebook. The indication consists of two lines, the name of the other person is in the first line, and this string is in the second line.
+    /// </field>
+    /// <field name="L_PeopleWell_Location_AnotherPage" type="String" static="true">
+    /// Used to indicate that another person is working on another page in the same section of the notebook. The indication consists of two lines, the name of the other person is in the first line, and this string is in the second line.
+    /// </field>
+    /// <field name="L_PeopleWell_Location_AnotherSection" type="String" static="true">
+    /// Used to indicate that another person is working in different section of the notebook. The indication consists of two lines, the name of the other person is in the first line, and this string is in the second line.
+    /// </field>
+    /// <field name="L_PeopleWell_Location_AnotherSectionGroup" type="String" static="true">
+    /// Used to indicate that another person is working in different section group of the notebook. The indication consists of two lines, the name of the other person is in the first line, and this string is in the second line.
+    /// </field>
+    /// <field name="L_PeopleWell_StateUserIsAlsoHere" type="String" static="true">
+    /// {Placeholder="{0}"} Placeholder 0 will be replaced by the name of the user who is coauthoring with the current user (exactly 1 other person).
+    /// </field>
+    /// <field name="l_PeopleWell_NavigateToSectionGroupError" type="String" static="true">
+    /// We show this error message when the user clicks on another user in the Peoples Well who is on a page in a different section group.
+    /// </field>
+    /// <field name="L_Navigation_PinButton" type="String" static="true">
+    /// Used to as a ARIA title for Pin Navigation Pane button.
+    /// </field>
+    /// <field name="L_Navigation_PinPane" type="String" static="true">
+    /// Used to as tooltip for Pin Navigation Pane button.
+    /// </field>
+    /// <field name="L_Navigation_UnpinPane" type="String" static="true">
+    /// Used to as tooltip for Unpin Navigation Pane button.
+    /// </field>
+    /// <field name="L_Navigation_ShowNotebooks" type="String" static="true">
+    /// Used to as tooltip for Notebooks List button.
+    /// </field>
+    /// <field name="L_NotebookSearch_NoSearchResultsFoundString" type="String" static="true">
+    /// We show this when no search results are returned.
+    /// </field>
+    /// <field name="L_NotebookSearch_SearchResultsHeaderString" type="String" static="true">
+    /// Used as the header for the search results on the search list UI. The {0} label is for the notebook name.
+    /// An example would be "Results from WACBook", if WACBook was the name of the notebook.
+    /// </field>
+    /// <field name="L_NotebookSearch_SearchBoxPlaceholderString" type="String" static="true">
+    /// The text inside the search box when it's empty. {0}-{1} are replaced by ⌘/ctrl+key, the shortcut for performing search
+    /// </field>
+    /// <field name="L_NotebookSearch_HelperWarning" type="String" static="true">
+    /// The text used to indicate there was an error getting the search results
+    /// </field>
+    /// <field name="L_FileUploadButtonText" type="String" static="true">
+    /// Used in the dialog for uploading files (main button).
+    /// </field>
+    /// <field name="L_FileUploadingTitle" type="String" static="true">
+    /// Used in the dialog for uploading files (title).
+    /// </field>
+    /// <field name="L_FilePlaceholderText" type="String" static="true">
+    /// Tooltip text for placeholder icon when uploading a file.
+    /// </field>
+    /// <field name="L_FileNotInserted" type="String" static="true">
+    /// Tooltip text for file icon when it hasn't successfully uploaded (possibly still uploading).
+    /// </field>
+    /// <field name="L_InvalidFileSize" type="String" static="true">
+    /// Error dialog body when selected file for upload is too big or is zero byte.
+    /// </field>
+    /// <field name="L_InvalidFileTitle" type="String" static="true">
+    /// Error dialog title when selected file for upload is too big or is zero byte.
+    /// </field>
+    /// <field name="L_FileAttachmentUploadingText" type="String" static="true">
+    /// </field>
+    /// <field name="L_InsertPrintoutPickerDialogHeader" type="String" static="true">
+    /// Header for the file picker dialog
+    /// </field>
+    /// <field name="L_InsertPrintoutPickerDialogBody" type="String" static="true">
+    /// Body for the file picker dialog
+    /// </field>
+    /// <field name="L_InsertPrintoutUnsupportedDialogHeader" type="String" static="true">
+    /// Header of unsupported file type dialog
+    /// </field>
+    /// <field name="L_InsertPrintoutUnsupportedDialogBody" type="String" static="true">
+    /// Body of unsupported file type dialog
+    /// </field>
+    /// <field name="L_InsertPrintoutErrorDialogHeader" type="String" static="true">
+    /// Header of file printout error dialog
+    /// </field>
+    /// <field name="L_InsertPrintoutErrorDialogBody" type="String" static="true">
+    /// Body of file printout error dialog
+    /// </field>
+    /// <field name="L_InsertPrintoutLoadingTooltip" type="String" static="true">
+    /// Tool tip on placeholder while printout is being created
+    /// </field>
+    /// <field name="L_InsertPrintoutLoadingText" type="String" static="true">
+    /// </field>
+    /// <field name="L_Back15Seconds" type="String" static="true">
+    /// Used as button label text, to skip back 15 seconds on audio being played
+    /// </field>
+    /// <field name="L_Forward15Seconds" type="String" static="true">
+    /// Used as button label text, to skip forward 15 seconds on audio being played
+    /// </field>
+    /// <field name="L_Pause" type="String" static="true">
+    /// Used as button label text, to pause currently playing audio
+    /// </field>
+    /// <field name="L_Play" type="String" static="true">
+    /// Used as button label text, to play currently selection audio
+    /// </field>
+    /// <field name="L_Record" type="String" static="true">
+    /// Used as button label text in audio ribbon tab, to begin recording audio
+    /// </field>
+    /// <field name="L_RecordAudio" type="String" static="true">
+    /// Used as button label text in insert ribbon tab, to begin recording audio
+    /// </field>
+    /// <field name="L_Stop" type="String" static="true">
+    /// Used as button label text in audio ribbon tab, to stop recording audio
+    /// </field>
+    /// <field name="L_Loading" type="String" static="true">
+    /// Used as slider label text, when audio is loading
+    /// </field>
+    /// <field name="L_FileUnplayable" type="String" static="true">
+    /// Used as slider label text, when audio is unplayable
+    /// </field>
+    /// <field name="L_GroupPlayback" type="String" static="true">
+    /// Used as group label text in audio ribbon tab, to describe audio playback controls
+    /// </field>
+    /// <field name="L_GroupRecording" type="String" static="true">
+    /// Used as group label text in audio ribbon tab, to describe audio recording controls
+    /// </field>
+    /// <field name="L_TabAudio" type="String" static="true">
+    /// Used as ribbon tab title text, to identify audio tools tab
+    /// </field>
+    /// <field name="L_TabRecordPlayback" type="String" static="true">
+    /// Used as top level ribbon tab title text, to identify functionality of audio tools tab
+    /// </field>
+    /// <field name="L_TabPlayback" type="String" static="true">
+    /// Used as top level ribbon tab title text, to identify functionality of audio tools tab when recording is disabled
+    /// </field>
+    /// <field name="L_RecordingWillStop" type="String" static="true">
+    /// Used as warning notification, to tell user recording will stop soon.
+    /// </field>
+    /// <field name="L_RecordingTimeLimit" type="String" static="true">
+    /// Used as warning notification, to tell user about recording time limit.
+    /// </field>
+    /// <field name="L_RecordingFailedUploadTitle" type="String" static="true">
+    /// Used as error dialog title when audio recording fails.
+    /// </field>
+    /// <field name="L_RecordingFailedUpload" type="String" static="true">
+    /// Used as error message in dialog when audio recording fails.
+    /// </field>
+    /// <field name="L_RecordingDeniedPermissionsTitle" type="String" static="true">
+    /// Used as error dialog title when audio recording permission is denied.
+    /// </field>
+    /// <field name="L_RecordingDeniedPermissions" type="String" static="true">
+    /// Used as error message in dialog when audio recording permission is denied.
+    /// </field>
+    /// <field name="L_RecordingDeviceNotFound" type="String" static="true">
+    /// Used as error message in dialog when audio recording did not find any device to record on.
+    /// </field>
+    /// <field name="L_PressEnterToPlay" type="String" static="true">
+    /// Used to tell the user press ENTER to play audio.
+    /// </field>
+    /// <field name="L_AudioTabTitle" type="String" static="true">
+    /// Used as ribbon tab title for audio, varying with BRS and browser compat
+    /// </field>
+    /// <field name="L_Crop" type="String" static="true">
+    /// Used as the label to execute crop operation
+    /// </field>
+    /// <field name="L_NoAltTextRuleName" type="String" static="true">
+    /// Used as displayed rule name for elements having no alt text
+    /// </field>
+    /// <field name="L_NoHyperlinkFriendlyTextRuleName" type="String" static="true">
+    /// Used as displayed rule name for hyperlinks having no friendly text
+    /// </field>
+    /// <field name="L_UnclearHyperlinkFriendlyTextRuleName" type="String" static="true">
+    /// Used as displayed rule name for hyperlinks having an unfriendly text
+    /// </field>
+    /// <field name="L_AccCheckerResultInstruction" type="String" static="true">
+    /// OneNote specific Accessibility Checker result instruction string
+    /// </field>
+    /// <field name="L_AccCheckerAdditionalInfoContent" type="String" static="true">
+    /// OneNote specific Accessibility Checker additional info content string
+    /// </field>
+    /// <field name="L_PageTitleLabel" type="String" static="true">
+    /// OneNote specific Accessibility Aria Label for page title
+    /// </field>
+    /// <field name="L_TellMeTryQuery01" type="String" static="true">
+    /// [Tag:CLE-UCI-TellMe]This string is meant to be in an informal, colloquial style, meant to resemble how everyday users would use the Tell Me feature.
+    /// This string is an example for showing users how to share their notebook.
+    /// This string is shown to the user as an example menu item, as the abbreviated question that results in the answer/command "Share Notebook" (id=jbtnFileSharing).
+    /// </field>
+    /// <field name="L_TellMeTryQuery02" type="String" static="true">
+    /// [Tag:CLE-UCI-TellMe]This string is meant to be in an informal, colloquial style, meant to resemble how everyday users would use the Tell Me feature.
+    /// This string is an example for showing users how to add a new page to their notebook.
+    /// This string is shown to the user as an example menu item, as the abbreviated question that results in the answer/command "Add Page" (id=fseaNew).
+    /// </field>
+    /// <field name="L_TellMeTryQuery03" type="String" static="true">
+    /// [Tag:CLE-UCI-TellMe]This string is meant to be in an informal, colloquial style, meant to resemble how everyday users would use the Tell Me feature.
+    /// This string is an example for showing users how to print their notebook.
+    /// This string is shown to the user as an example menu item, as the abbreviated question that results in the answer/command "Print" (id=jbtnPrint).
+    /// </field>
+    /// <field name="L_TellMeTryQuery04" type="String" static="true">
+    /// [Tag:CLE-UCI-TellMe]This string is meant to be in an informal, colloquial style, meant to resemble how everyday users would use the Tell Me feature.
+    /// This string is an example for showing users how to change the font color.
+    /// This string is shown to the user as an example menu item, as the abbreviated question that results in the answer/command "Font Color" (id=fontColor).
+    /// </field>
+    /// <field name="L_TellMeTryQuery05" type="String" static="true">
+    /// [Tag:CLE-UCI-TellMe]This string is meant to be in an informal, colloquial style, meant to resemble how everyday users would use the Tell Me feature.
+    /// This string is an example for showing users how to check their spelling.
+    /// This string is shown to the user as an example menu item, as the abbreviated question that results in the answer/command "Spelling" (id=fseaNextSpellingError).
+    /// </field>
+    /// <field name="L_Type" type="String" static="true">
+    /// Used as button label text, to select the mouse cursor tool which enables to user to type in the page
+    /// </field>
+    /// <field name="L_MarqueeSelect" type="String" static="true">
+    /// Used as button label text, to select the marquee selection tool
+    /// </field>
+    /// <field name="L_Eraser" type="String" static="true">
+    /// Used as button label text, to select the eraser tool
+    /// </field>
+    /// <field name="L_Pen" type="String" static="true">
+    /// Used as button label text, to select the pen tool
+    /// </field>
+    /// <field name="L_Highlighter" type="String" static="true">
+    /// Used as button label text, to select the highlighter tool
+    /// </field>
+    /// <field name="L_InkColor" type="String" static="true">
+    /// Used as button label text, to select ink color palette
+    /// </field>
+    /// <field name="L_InkThickness" type="String" static="true">
+    /// Used as button label text, to select ink thickness
+    /// </field>
+    /// <field name="L_TabDraw" type="String" static="true">
+    /// Used as ribbon tab title text, to identify draw tab
+    /// </field>
+    /// <field name="L_GroupTools" type="String" static="true">
+    /// Title of toolbar group for selecting ink tool (type, eraser, pen, highlighter).
+    /// </field>
+    /// <field name="L_GroupStyle" type="String" static="true">
+    /// Title of toolbar group for selecting ink thickness.
+    /// </field>
+    /// <field name="L_Millimeters" type="String" static="true">
+    /// String displayed as a caption meaning millimeters (abbreviation).
+    /// </field>
+    /// <field name="L_GroupColor" type="String" static="true">
+    /// Title of toolbar group for selecting ink color.
+    /// </field>
+    /// <field name="L_InkColor_Red" type="String" static="true">
+    /// Used as button label text, to select the ink Red color
+    /// </field>
+    /// <field name="L_InkColor_Orange" type="String" static="true">
+    /// Used as button label text, to select the ink Orange color
+    /// </field>
+    /// <field name="L_InkColor_Gold" type="String" static="true">
+    /// Used as button label text, to select the ink Gold color
+    /// </field>
+    /// <field name="L_InkColor_Yellow" type="String" static="true">
+    /// Used as button label text, to select the ink Yellow color
+    /// </field>
+    /// <field name="L_InkColor_Green" type="String" static="true">
+    /// Used as button label text, to select the ink Green color
+    /// </field>
+    /// <field name="L_InkColor_DarkGreen" type="String" static="true">
+    /// Used as button label text, to select the ink Dark Green color
+    /// </field>
+    /// <field name="L_InkColor_LightGreen" type="String" static="true">
+    /// Used as button label text, to select the ink Light Green color
+    /// </field>
+    /// <field name="L_InkColor_SkyBlue" type="String" static="true">
+    /// Used as button label text, to select the ink Sky Blue color
+    /// </field>
+    /// <field name="L_InkColor_Blue" type="String" static="true">
+    /// Used as button label text, to select the ink Blue color
+    /// </field>
+    /// <field name="L_InkColor_Purple" type="String" static="true">
+    /// Used as button label text, to select the ink Purple color
+    /// </field>
+    /// <field name="L_InkColor_Pink" type="String" static="true">
+    /// Used as button label text, to select the ink Pink color
+    /// </field>
+    /// <field name="L_InkColor_Brown" type="String" static="true">
+    /// Used as button label text, to select the ink Brown color
+    /// </field>
+    /// <field name="L_InkColor_Black" type="String" static="true">
+    /// Used as button label text, to select the ink Black color
+    /// </field>
+    /// <field name="L_InkColor_DarkGray" type="String" static="true">
+    /// Used as button label text, to select the ink Dark Gray color
+    /// </field>
+    /// <field name="L_InkColor_LightGray" type="String" static="true">
+    /// Used as button label text, to select the ink Light Gray color
+    /// </field>
+    /// <field name="L_InkColor_White" type="String" static="true">
+    /// Used as button label text, to select the ink White color
+    /// </field>
+    /// <field name="L_PageColor_Blue" type="String" static="true">
+    /// Used as button label text, to select Blue as Page color
+    /// </field>
+    /// <field name="L_PageColor_Teal" type="String" static="true">
+    /// Used as button label text, to select Teal as Page color
+    /// </field>
+    /// <field name="L_PageColor_Green" type="String" static="true">
+    /// Used as button label text, to select Green as Page color
+    /// </field>
+    /// <field name="L_PageColor_Red" type="String" static="true">
+    /// Used as button label text, to select Blue as Page color
+    /// </field>
+    /// <field name="L_PageColor_BlueMist" type="String" static="true">
+    /// Used as button label text, to select Blue Mist as Page color
+    /// </field>
+    /// <field name="L_PageColor_Cyan" type="String" static="true">
+    /// Used as button label text, to select Cyan as Page color
+    /// </field>
+    /// <field name="L_PageColor_Apple" type="String" static="true">
+    /// Used as button label text, to select Apple as Page color
+    /// </field>
+    /// <field name="L_PageColor_RedChalk" type="String" static="true">
+    /// Used as button label text, to select Red Chalk as Page color
+    /// </field>
+    /// <field name="L_PageColor_PurpleMist" type="String" static="true">
+    /// Used as button label text, to select Purple Mist as Page color
+    /// </field>
+    /// <field name="L_PageColor_Silver" type="String" static="true">
+    /// Used as button label text, to select Silver as Page color
+    /// </field>
+    /// <field name="L_PageColor_LemonLime" type="String" static="true">
+    /// Used as button label text, to select Lemon Lime as Page color
+    /// </field>
+    /// <field name="L_PageColor_Tan" type="String" static="true">
+    /// Used as button label text, to select Tan as Page color
+    /// </field>
+    /// <field name="L_PageColor_Purple" type="String" static="true">
+    /// Used as button label text, to select Purple as Page color
+    /// </field>
+    /// <field name="L_PageColor_Magenta" type="String" static="true">
+    /// Used as button label text, to select Magenta as Page color
+    /// </field>
+    /// <field name="L_PageColor_Yellow" type="String" static="true">
+    /// Used as button label text, to select Yellow as Page color
+    /// </field>
+    /// <field name="L_PageColor_Orange" type="String" static="true">
+    /// Used as button label text, to select Orange as Page color
+    /// </field>
+    /// <field name="L_NoPageColor" type="String" static="true">
+    /// Used as button label text, to select No Color as Page color
+    /// </field>
+    /// <field name="L_Math" type="String" static="true">
+    /// Title of toolbar group for math.
+    /// </field>
+    /// <field name="L_InkToMath" type="String" static="true">
+    /// Used as a button label text for Ink to Math button
+    /// </field>
+    /// <field name="L_FixIt" type="String" static="true">
+    /// Used as a button label text for Fix it button
+    /// </field>
+    /// <field name="L_FixItDone" type="String" static="true">
+    /// Used as a button label text for Fix it selected button
+    /// </field>
+    /// <field name="L_MathSolverDefaultAction" type="String" static="true">
+    /// Used as a default option in solver actions dropdown
+    /// </field>
+    /// <field name="L_MathSolverDefaultTemplate" type="String" static="true">
+    /// Used as a default option in solver templates dropdown
+    /// </field>
+    /// <field name="L_MathTutorialTitle" type="String" static="true">
+    /// Used as a tutorial message for using math feature
+    /// </field>
+    /// <field name="L_MathTutorialOne" type="String" static="true">
+    /// Used as a tutorial message for using math feature
+    /// </field>
+    /// <field name="L_MathTutorialOneOr" type="String" static="true">
+    /// Used as a tutorial message for using math feature
+    /// </field>
+    /// <field name="L_MathTutorialTwo" type="String" static="true">
+    /// Used as a tutorial message for using math feature
+    /// </field>
+    /// <field name="L_MathTutorialThree" type="String" static="true">
+    /// Used as a tutorial message for using math feature
+    /// </field>
+    /// <field name="L_MathNumberingOne" type="String" static="true">
+    /// Used as numbering for tutorial message for using math feature
+    /// </field>
+    /// <field name="L_MathNumberingTwo" type="String" static="true">
+    /// Used as numbering for tutorial message for using math feature
+    /// </field>
+    /// <field name="L_MathNumberingThree" type="String" static="true">
+    /// Used as numbering for tutorial message for using math feature
+    /// </field>
+    /// <field name="L_MathRecognitionError" type="String" static="true">
+    /// Used as a message when math recognizer doesn't return the result
+    /// </field>
+    /// <field name="L_MathRecognitionAlternatesError" type="String" static="true">
+    /// Used as a message when math recognizer doesn't return the alternates
+    /// </field>
+    /// <field name="L_MathSolverError" type="String" static="true">
+    /// Used as a message when math solver doesn't return the result
+    /// </field>
+    /// <field name="L_MathGraphShowKeyGraphFeatures" type="String" static="true">
+    /// Used as key graph features button text.
+    /// </field>
+    /// <field name="L_MathGraphShowAllKeyFeatures" type="String" static="true">
+    /// Used as show all key graph features on graph check box label text.
+    /// </field>
+    /// <field name="L_MathGraphTooComplexKeyGraphFeatures" type="String" static="true">
+    /// Used as a message when math solver can't calculate key graph features.
+    /// </field>
+    /// <field name="L_MathGraphTooComplexKeyGraphFeature" type="String" static="true">
+    /// Used as a message when math solver can't calculate a key graph feature.
+    /// </field>
+    /// <field name="L_MathGraphInsertOnPage" type="String" static="true">
+    /// Used as a button label text for insert graph button.
+    /// </field>
+    /// <field name="L_MathGraphZoomIn" type="String" static="true">
+    /// Used as a button label text for zoom in button.
+    /// </field>
+    /// <field name="L_MathGraphZoomOut" type="String" static="true">
+    /// Used as a button label text for zoom out button.
+    /// </field>
+    /// <field name="L_MathGraphReset" type="String" static="true">
+    /// Used as a button label text for reset to default view button.
+    /// </field>
+    /// <field name="L_MathGraphPanLeft" type="String" static="true">
+    /// Used as a button label text for pan left button.
+    /// </field>
+    /// <field name="L_MathGraphPanUp" type="String" static="true">
+    /// Used as a button label text for pan up button.
+    /// </field>
+    /// <field name="L_MathGraphPanRight" type="String" static="true">
+    /// Used as a button label text for pan right button.
+    /// </field>
+    /// <field name="L_MathGraphPanDown" type="String" static="true">
+    /// Used as a button label text for pan down button.
+    /// </field>
+    /// <field name="L_MathGraphIncreaseParameter" type="String" static="true">
+    /// Used as a button label text for increase parameter button.
+    /// {Placeholder="{0}"} This will be replaced by the name of the parameter, i.e. "a", "b", "c"
+    /// </field>
+    /// <field name="L_MathGraphDecreaseParameter" type="String" static="true">
+    /// Used as a button label text for decrease parameter button.
+    /// {Placeholder="{0}"} This will be replaced by the name of the parameter, i.e. "a", "b", "c"
+    /// </field>
+    /// <field name="L_MathGraphShowAll" type="String" static="true">
+    /// Used as a label text for show all features on graph check box when it isn't checked.
+    /// </field>
+    /// <field name="L_MathGraphHideAll" type="String" static="true">
+    /// Used as a label text for show all features on graph check box when it is checked.
+    /// </field>
+    /// <field name="L_MathGraphShowKeyGraphFeature" type="String" static="true">
+    /// Used as a label text for check box for a key graph feature when it isn't checked.
+    /// {Placeholder="{0}"} This will be replaced by the name of the key graph feature., i.e. Show zeros on graph, or Show vertical asymptotes on graph
+    /// </field>
+    /// <field name="L_MathGraphHideKeyGraphFeature" type="String" static="true">
+    /// Used as a label text for check box for a key graph feature when it is checked.
+    /// {Placeholder="{0}"} This will be replaced by the name of the key graph feature, i.e. Hide zeros on graph, or Hide vertical asymptotes on graph
+    /// </field>
+    /// <field name="L_MathSettingsSolving" type="String" static="true">
+    /// Used as a heading for solver settings.
+    /// </field>
+    /// <field name="L_MathSettingsSolveFor" type="String" static="true">
+    /// Used as a label text for solving field radio button group.
+    /// </field>
+    /// <field name="L_MathSettingsRealNumbers" type="String" static="true">
+    /// Used as a label text for real numbers radio button in settings.
+    /// </field>
+    /// <field name="L_MathSettingsComplexNumbers" type="String" static="true">
+    /// Used as a label text for complex numbers radio button in settings.
+    /// </field>
+    /// <field name="L_MathSettingsAngleMeasurement" type="String" static="true">
+    /// Used as a label text for angle measurement field radio button group.
+    /// </field>
+    /// <field name="L_MathSettingsDegrees" type="String" static="true">
+    /// Used as a label text for degrees radio button in settings.
+    /// </field>
+    /// <field name="L_MathSettingsRadians" type="String" static="true">
+    /// Used as a label text for radians radio button in settings.
+    /// </field>
+    /// <field name="L_MathSettingsGradians" type="String" static="true">
+    /// Used as a label text for gradians radio button in settings.
+    /// </field>
+    /// <field name="L_MathSettingsBack" type="String" static="true">
+    /// Used as a label text for back button in settings.
+    /// </field>
+    /// <field name="L_MathSettings" type="String" static="true">
+    /// Used as a label text for settings button.
+    /// </field>
+    /// <field name="L_MathSettingsTitle" type="String" static="true">
+    /// Used as a title for math settings pane.
+    /// </field>
+    /// <field name="L_MathReader" type="String" static="true">
+    /// Used as a label text for Immersive reader button.
+    /// </field>
+    /// <field name="L_MathOptions" type="String" static="true">
+    /// Used as a label text for settings button.
+    /// </field>
+    /// <field name="L_MathSolutionSteps" type="String" static="true">
+    /// Used as a label text for settings button.
+    /// </field>
+    /// <field name="L_MathGraphing" type="String" static="true">
+    /// Used as a label text for settings button.
+    /// </field>
+    /// <field name="L_MathSwitchTutorial" type="String" static="true">
+    /// Used as a label text for settings button.
+    /// </field>
+    /// <field name="L_MathSwitchTimeoutWarning" type="String" static="true">
+    /// Used as a warning message when switch is close to timeout.
+    /// </field>
+    /// <field name="L_MathSwitchTimeout" type="String" static="true">
+    /// Used as a label for time input when timeout is not enabled.
+    /// </field>
+    /// <field name="L_MathSwitchRemainingTime" type="String" static="true">
+    /// Used as a label for time input when timeout is enabled.
+    /// </field>
+    /// <field name="L_MathSwitchMinutes" type="String" static="true">
+    /// Used as a label for units of time in time input.
+    /// </field>
+    /// <field name="L_MathSwitchApply" type="String" static="true">
+    /// Used as a label for apply button on switch pane.
+    /// </field>
+    /// <field name="L_MathSwitchInputInfo" type="String" static="true">
+    /// Used as an info for time input when timeout is enabled.
+    /// </field>
+    /// <field name="L_MathSwitchAllMathFeaturesOff" type="String" static="true">
+    /// Used as an info that all math features are turned off.
+    /// </field>
+    /// <field name="L_MathSwitchSolvingOff" type="String" static="true">
+    /// Used as an info that solving is turned off.
+    /// </field>
+    /// <field name="L_MathSwitchStepsOff" type="String" static="true">
+    /// Used as an info that solution steps are turned off.
+    /// </field>
+    /// <field name="L_MathSwitchGraphingOff" type="String" static="true">
+    /// Used as an info that graphing is turned off.
+    /// </field>
+    /// <field name="L_MathSwitchKGFOff" type="String" static="true">
+    /// Used as an info that key graph features are turned off.
+    /// </field>
+    /// <field name="L_MathDragSolution" type="String" static="true">
+    /// Used as a tooltip for solution.
+    /// </field>
+    /// <field name="L_MathDragSteps" type="String" static="true">
+    /// Used as a tooltip for steps.
+    /// </field>
+    /// <field name="L_MathMoreSteps" type="String" static="true">
+    /// Used as a tooltip for steps.
+    /// </field>
+    /// <field name="L_MathSwitchError" type="String" static="true">
+    /// Used as an error message for math switch unsuccessful call.
+    /// </field>
+    /// <field name="L_MathSwitchTryAgain" type="String" static="true">
+    /// Used as an error message for math switch unsuccessful call.
+    /// </field>
+    /// <field name="L_MathSwitchTurnOnOff" type="String" static="true">
+    /// Used as a label for math switch button.
+    /// </field>
+    /// <field name="L_MathQuickStartExamples" type="String" static="true">
+    /// Used as a title for quick start examples.
+    /// </field>
+    /// <field name="L_MathGenerateQuiz" type="String" static="true">
+    /// Used as a title for generate quiz button.
+    /// </field>
+    /// <field name="L_MathFeedback" type="String" static="true">
+    /// Used as a title for feedback link.
+    /// </field>
+    /// <field name="L_OnboardingCalloutTxt" type="String" static="true">
+    /// Used by the onboarding callout asking user to start writing
+    /// </field>
+    /// <field name="L_OnboardingCalloutAriaLabel" type="String" static="true">
+    /// Used by the onboarding callout to inform the user on how to land in the active {Placeholder="{subdoctype}"}
+    /// </field>
+    /// <field name="L_BookmarkCalloutLabel" type="String" static="true">
+    /// Used as a label for the bookmark callout
+    /// {Placeholder="{0}"} This will be replaced by a UTF symbol of a star similar to the bookmark button
+    /// </field>
+    /// <field name="L_BookmarkCalloutAriaLabel" type="String" static="true">
+    /// Used as a aria-label for the bookmark callout
+    /// </field>
+    /// <field name="L_TextMeInvalidNumber" type="String" static="true">
+    /// Used as a error text shown for textme bar when user prompt invalid phone number
+    /// </field>
+    /// <field name="L_TextMeInputPlaceHolder" type="String" static="true">
+    /// Used as a placeholder for input text where user is prompted the phone number
+    /// </field>
+    /// <field name="L_TextMeGetAppForFree" type="String" static="true">
+    /// Used as bar screen title to get OneNote mobile application sent to mobile
+    /// </field>
+    /// <field name="L_TextMeSendLinkButton" type="String" static="true">
+    /// Used as button label text for textme bar to send the onenote mobile app link to mobile
+    /// </field>
+    /// <field name="L_TextMeDisclaimerText1" type="String" static="true">
+    /// Used as a Disclaimer text to notify the user that Microsoft will not store their phone number
+    /// </field>
+    /// <field name="L_TextMeDisclaimerText2" type="String" static="true">
+    /// Used as a Disclaimer text to notify the user that standard SMS charges may apply when SMS is sent
+    /// </field>
+    /// <field name="L_TextMeReadMore" type="String" static="true">
+    /// Used as a label when clicked on it expands the Disclaimer text
+    /// </field>
+    /// <field name="L_TextMeReadLess" type="String" static="true">
+    /// Used as a label when clicked on it collapses the Disclaimer text
+    /// </field>
+    /// <field name="L_TextMeLinkSentTo" type="String" static="true">
+    /// Used as title for success screen showed at the end of textme experience
+    /// {Placeholder="{0}"} This will be replaced by the user's phone number
+    /// </field>
+    /// <field name="L_GroupOnlineMedia" type="String" static="true">
+    /// Title of toolbar group for online media.
+    /// </field>
+    /// <field name="L_InsertEmbeddedVideo" type="String" static="true">
+    /// Used as a button label text for InsertEmbeddedVideo button
+    /// </field>
+    /// <field name="L_InsertEmbeddedVideoDialogTitle" type="String" static="true">
+    /// Used as a title text for InsertEmbeddedVideo dialog
+    /// </field>
+    /// <field name="L_VideoAddress" type="String" static="true">
+    /// Used as a label text for Video address text field
+    /// </field>
+    /// <field name="L_VideoInsert" type="String" static="true">
+    /// Used as a label for insert button in the dialog
+    /// </field>
+    /// <field name="L_SupportedVideoSources" type="String" static="true">
+    /// Used as a Link text on insert video dialog opens the help page for supported providers
+    /// </field>
+    /// <field name="L_VideoUnsupportedError" type="String" static="true">
+    /// Used as a error text for unsupported providers
+    /// </field>
+    /// <field name="L_VideoNotFoundError" type="String" static="true">
+    /// Used as a error text for video not found
+    /// </field>
+    /// <field name="L_ThumbnailAltText" type="String" static="true">
+    /// Used as a template for the alt text for the thumbnail image for the embedded video
+    /// {Placeholder="{0}"} This will be replaced by the type of web content eg. Video, Rich, Audio etc.
+    /// </field>
+    /// <field name="L_ThumbnailAltTextTitled" type="String" static="true">
+    /// Used as a template for the alt text for the thumbnail image for the embedded video with title
+    /// {Placeholder="{0}"} This will be replaced by the type of web content eg. Video, Rich, Audio etc.
+    /// {Placeholder="{1}"} This will be replaced by the title of of the web content
+    /// </field>
+    /// <field name="L_ThumbnailAltTextVideo" type="String" static="true">
+    /// Used as a alt-text label below for video web content
+    /// </field>
+    /// <field name="L_ThumbnailAltTextRich" type="String" static="true">
+    /// Used as a alt-text label below for rich web content
+    /// </field>
+    /// <field name="L_QuotaExceededInOneDrive" type="String" static="true">
+    /// The text to show in business bar when user exceeded the OneDrive quota in OneNote
+    /// </field>
+    /// <field name="L_QuotaExceededInSPO" type="String" static="true">
+    /// The text to show in business bar when user exceeded the SPO quota in OneNote
+    /// </field>
+    /// <field name="L_ContentAppError" type="String" static="true">
+    /// Error message in case users insert content add-in when their IP is in page content that is not supported
+    /// Example, when the IP is in page title
+    /// </field>
+    /// <field name="L_Move" type="String" static="true">
+    /// </field>
+    /// <field name="L_MoveOrCopyContextualMenuItem" type="String" static="true">
+    /// Used as a contextual menu item text for move/copy page
+    /// </field>
+    /// <field name="L_MoveOrCopyDialogTitle" type="String" static="true">
+    /// Used as a dialog title for move/copy page
+    /// </field>
+    /// <field name="L_MoveOrCopyIntroLabel" type="String" static="true">
+    /// Used as a dialog introduction label text for move/copy page
+    /// </field>
+    /// <field name="L_CopyPageSucceedToastMessage" type="String" static="true">
+    /// Toast message when succeeded in copying a page. {Placeholder="{0}"} Placeholder 0 will be replaced by the name of the page. {Placeholder="{1}"} Placeholder 1 will be replaced by the name of the section.
+    /// </field>
+    /// <field name="L_MoveOrCopyPageFailureToastMessage" type="String" static="true">
+    /// Toast message when failed to move/copy a page. {Placeholder="{0}"} Placeholder 0 will be replaced by the name of the page. {Placeholder="{1}"} Placeholder 1 will be replaced by the name of the section.
+    /// </field>
+    /// <field name="L_GetSectionUrlOptionText" type="String" static="true">
+    /// Get Section URL Command string
+    /// </field>
+    /// <field name="L_HyperlinkWebViewText" type="String" static="true">
+    /// Get Section URL Command string
+    /// </field>
+    /// <field name="L_ChooseFileTypeDialogTitle" type="String" static="true">
+    /// </field>
+    /// <field name="L_AttachACopy" type="String" static="true">
+    /// </field>
+    /// <field name="L_AttachACopyExplanation" type="String" static="true">
+    /// </field>
+    /// <field name="L_AttachAsOneDriveFile" type="String" static="true">
+    /// </field>
+    /// <field name="L_AttachAsOneDriveFileExplanation" type="String" static="true">
+    /// </field>
+    /// <field name="L_OfflineAccessRequired" type="String" static="true">
+    /// </field>
+    /// <field name="L_TryStickyNotes" type="String" static="true">
+    /// Label to invite users to try out Sticky Notes
+    /// </field>
+    /// <field name="L_SyncOfflineButtonText" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorUnsavedChanges" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorInternalButtonText" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorPermissionsButtonText" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorOutOfStorageButtonText" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncSuccessfulCalloutTitle" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncSuccessfulCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncInProgressCalloutTitle" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncOfflineWithInMinCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncOfflineAfterMinCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncOfflineUnsavedChangesCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorUnsavedChangesCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorInternalCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorPermissionsCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorPermissionsReadOnlyCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorOutOfStorageCalloutContent" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncLastSuccessfulTime" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncTryAgain" type="String" static="true">
+    /// </field>
+    /// <field name="L_SyncErrorLearnMore" type="String" static="true">
+    /// </field>
+}
+
+
+OneNoteIntl.OneNoteStrings.registerClass('OneNoteIntl.OneNoteStrings');
+OneNoteIntl.OneNoteStrings.L_BrowseVersions = 'Page Versions';
+OneNoteIntl.OneNoteStrings.L_Camera = 'Camera';
+OneNoteIntl.OneNoteStrings.L_CopyNotebook = 'Copy Notebook';
+OneNoteIntl.OneNoteStrings.L_CopyToCloudDescription = 'Edit and view this notebook on all your devices';
+OneNoteIntl.OneNoteStrings.L_DeleteSectionConfirmationTitle = 'Permanently Delete Section';
+OneNoteIntl.OneNoteStrings.L_DeleteSectionConfirmationDescription = 'Deleting a section can\'t be undone. Do you want to permanently delete this section and all of its pages?';
+OneNoteIntl.OneNoteStrings.L_Edit = 'Edit in Browser';
+OneNoteIntl.OneNoteStrings.L_EditDocument = 'Edit Notebook';
+OneNoteIntl.OneNoteStrings.L_EditInOneNote = 'Edit in {appshort} app';
+OneNoteIntl.OneNoteStrings.L_EditInOneNoteDescription = 'Use the full functionality of {richclientfull}.';
+OneNoteIntl.OneNoteStrings.L_OpenInApp = 'Open in app';
+OneNoteIntl.OneNoteStrings.L_OpenInWebApp = 'Open in {webappshort}';
+OneNoteIntl.OneNoteStrings.L_EditInOneNoteWebAppDescription = 'Make changes right here.';
+OneNoteIntl.OneNoteStrings.L_EmptyRecycleBinFishbowlTitle = 'Deleted Notes';
+OneNoteIntl.OneNoteStrings.L_EmptyRecycleBinFishbowlText = 'You don\'t have any deleted notes.';
+OneNoteIntl.OneNoteStrings.L_FileAttachment = 'File Attachment';
+OneNoteIntl.OneNoteStrings.L_FilePrintout = 'File Printout';
+OneNoteIntl.OneNoteStrings.L_OneDriveFileAttachment = 'OneDrive File';
+OneNoteIntl.OneNoteStrings.L_FileMenuEdit = 'Edit';
+OneNoteIntl.OneNoteStrings.L_FontColorDarkGreenHighlight = 'Green';
+OneNoteIntl.OneNoteStrings.L_GroupAuthors = 'Authors';
+OneNoteIntl.OneNoteStrings.L_GroupNavigation = 'Navigation';
+OneNoteIntl.OneNoteStrings.L_GroupBasicText = 'Basic Text';
+OneNoteIntl.OneNoteStrings.L_GroupBorders = 'Borders';
+OneNoteIntl.OneNoteStrings.L_GroupFiles = 'Files';
+OneNoteIntl.OneNoteStrings.L_GroupNotebook = 'Notebook';
+OneNoteIntl.OneNoteStrings.L_GroupNotebookViews = 'Notebook Views';
+OneNoteIntl.OneNoteStrings.L_GroupPageSetup = 'Page Setup';
+OneNoteIntl.OneNoteStrings.L_GroupTags = 'Tags';
+OneNoteIntl.OneNoteStrings.L_GroupVersions = 'Versions';
+OneNoteIntl.OneNoteStrings.L_HideSpellingErrors = 'Hide Spelling Errors';
+OneNoteIntl.OneNoteStrings.L_HideBorders = 'Hide Borders';
+OneNoteIntl.OneNoteStrings.L_MenuAlignment = 'Paragraph Alignment';
+OneNoteIntl.OneNoteStrings.L_NoteTagMark = 'Mark Tag';
+OneNoteIntl.OneNoteStrings.L_NavigationOptions = 'Navigation Options';
+OneNoteIntl.OneNoteStrings.L_ShowSectionsAndPages = 'Show Sections and Pages';
+OneNoteIntl.OneNoteStrings.L_ShowOnlyPages = 'Show Only Pages';
+OneNoteIntl.OneNoteStrings.L_HideAll = 'Hide All';
+OneNoteIntl.OneNoteStrings.L_NoteTagClear = 'Clear Tag';
+OneNoteIntl.OneNoteStrings.L_NoteTagRemove = 'Remove Tag';
+OneNoteIntl.OneNoteStrings.L_NoteTags = 'Tag';
+OneNoteIntl.OneNoteStrings.L_PageColor = 'Page Color';
+OneNoteIntl.OneNoteStrings.L_Print = 'Print';
+OneNoteIntl.OneNoteStrings.L_PrintDescription = 'Print this page.';
+OneNoteIntl.OneNoteStrings.L_ShowAuthors = 'Show Authors';
+OneNoteIntl.OneNoteStrings.L_ShowVersions = 'Browse Versions';
+OneNoteIntl.OneNoteStrings.L_SyncStatusSyncing = 'Saving...';
+OneNoteIntl.OneNoteStrings.L_SyncStatusSyncComplete = 'Saved';
+OneNoteIntl.OneNoteStrings.L_SyncStatusSyncFailed = 'Unsaved changes';
+OneNoteIntl.OneNoteStrings.L_DeletedNotes = 'Deleted Notes';
+OneNoteIntl.OneNoteStrings.L_PageTemplates = 'Page Templates';
+OneNoteIntl.OneNoteStrings.L_DeletedPages = 'Deleted Pages';
+OneNoteIntl.OneNoteStrings.L_PermanentlyDeletePage = 'Permanently Delete';
+OneNoteIntl.OneNoteStrings.L_RestorePage = 'Restore Page';
+OneNoteIntl.OneNoteStrings.L_RestoreDialogTitle = 'Select section to restore page to:';
+OneNoteIntl.OneNoteStrings.L_BackToSectionButtonText = 'Back';
+OneNoteIntl.OneNoteStrings.L_DeletePageSucceedToastMessage = '\"{0}\" was moved to Deleted Notes.';
+OneNoteIntl.OneNoteStrings.L_DeletePageFailureToastMessage = 'Page \"{0}\" couldn\'t be deleted. Please try again.';
+OneNoteIntl.OneNoteStrings.L_RestorePageSucceedToastMessage = 'Page \"{0}\" was restored to {1}.';
+OneNoteIntl.OneNoteStrings.L_RestorePageFailureToastMessage = 'Page \"{0}\" couldn\'t be restored to {1}. Please try again.';
+OneNoteIntl.OneNoteStrings.L_GroupHistory = 'History';
+OneNoteIntl.OneNoteStrings.L_DeletePagePermanentlyConfirmation = 'Pages from a password protected section can\'t be moved to the Recycle Bin.\n\nDo you want to permanently delete them?';
+OneNoteIntl.OneNoteStrings.L_DeletePagesPermanentlyConfirmation = 'Be careful! Deleting these pages cannot be undone. Are you sure you want to permanently delete them?';
+OneNoteIntl.OneNoteStrings.L_EduDeleteLockedPagePermanentlyConfirmation = 'This page is distributed or is part of an assignment. Are you sure you want to delete it?';
+OneNoteIntl.OneNoteStrings.L_UnableToMovePageToDeletedNotesDialogTitle = 'Page not moved';
+OneNoteIntl.OneNoteStrings.L_UnableToMovePageToDeletedNotesDialogBody = 'We couldn\u2019t move \"{0}\" to Deleted Notes. Would you like to permanently delete this page? This can not be undone.';
+OneNoteIntl.OneNoteStrings.L_NetworkDisconnectedToastMessage = 'OneNote Online has detected a problem and is trying to reconnect.';
+OneNoteIntl.OneNoteStrings.L_NetworkConnectedToastMessage = 'OneNote Online is now reconnected.';
+OneNoteIntl.OneNoteStrings.L_RenameSection = 'Rename Section';
+OneNoteIntl.OneNoteStrings.L_DeleteSection = 'Delete Section';
+OneNoteIntl.OneNoteStrings.L_DeletePage = 'Delete Page';
+OneNoteIntl.OneNoteStrings.L_MakeSubpage = 'Make Subpage';
+OneNoteIntl.OneNoteStrings.L_PromoteSubpage = 'Promote Subpage';
+OneNoteIntl.OneNoteStrings.L_SaveAs = 'Save As';
+OneNoteIntl.OneNoteStrings.L_AltTextButton = 'Alt Text...';
+OneNoteIntl.OneNoteStrings.L_MenuShadingColor = 'Shading';
+OneNoteIntl.OneNoteStrings.L_NewPage = 'New Page';
+OneNoteIntl.OneNoteStrings.L_NewSection = 'New Section';
+OneNoteIntl.OneNoteStrings.l_NewSectionButtonText = 'Section';
+OneNoteIntl.OneNoteStrings.l_NewPageButtonText = 'Page';
+OneNoteIntl.OneNoteStrings.l_NotebooksButtonText = 'Notebooks';
+OneNoteIntl.OneNoteStrings.l_NotebooksButtonAriaLabel = 'Notebook List';
+OneNoteIntl.OneNoteStrings.l_NotebooksButtonTooltip = 'Go to Other Notebooks';
+OneNoteIntl.OneNoteStrings.l_NavViewExpandButtonTooltip = 'Show Sections and Pages';
+OneNoteIntl.OneNoteStrings.l_Download = 'Download a Copy';
+OneNoteIntl.OneNoteStrings.l_EmbeddedFileAltTextDialogLabel = 'Type the alternative text for this file.';
+OneNoteIntl.OneNoteStrings.l_PageContentsLabel = 'Page Contents';
+OneNoteIntl.OneNoteStrings.l_PasswordProtectedSectionDialogTitle = 'Protected Section';
+OneNoteIntl.OneNoteStrings.l_PasswordProtectedSectionDialogDescription = 'This section is password-protected.';
+OneNoteIntl.OneNoteStrings.l_PasswordProtectedSectionDialogEnterPassword = 'Enter password:';
+OneNoteIntl.OneNoteStrings.l_PasswordProtectedSectionWrongPasswordText = 'The password you entered is incorrect. Please try again.';
+OneNoteIntl.OneNoteStrings.l_PasswordProtectedSectionRequestFailedText = 'Sorry, there was a problem unlocking your section. Please try again.';
+OneNoteIntl.OneNoteStrings.l_SessionExpiredActionRequiredText = 'Your session has expired, and {appshort} needs to refresh the page.';
+OneNoteIntl.OneNoteStrings.l_SessionExpiredSaveWorkInstructionText = 'To avoid losing your changes, copy the highlighted content, then click Refresh. When the page reloads, paste your copied content back into {appshort}.';
+OneNoteIntl.OneNoteStrings.l_SessionExpiredUnsavedWork = 'Unsaved changes are highted in red.';
+OneNoteIntl.OneNoteStrings.l_SessionExpiredBusinessBarText = 'Copy unsaved content then click Refresh';
+OneNoteIntl.OneNoteStrings.l_SessionExpiredDialogTitle = 'You have unsaved changes';
+OneNoteIntl.OneNoteStrings.l_SessionExpiredDialogButtonContinue = 'Continue';
+OneNoteIntl.OneNoteStrings.l_NoteTag_0 = 'To Do';
+OneNoteIntl.OneNoteStrings.l_NoteTag_1 = 'Important';
+OneNoteIntl.OneNoteStrings.l_NoteTag_2 = 'Question';
+OneNoteIntl.OneNoteStrings.l_NoteTag_3 = 'Remember for later';
+OneNoteIntl.OneNoteStrings.l_NoteTag_4 = 'Definition';
+OneNoteIntl.OneNoteStrings.l_NoteTag_5 = 'Highlight';
+OneNoteIntl.OneNoteStrings.l_NoteTag_6 = 'Contact';
+OneNoteIntl.OneNoteStrings.l_NoteTag_7 = 'Address';
+OneNoteIntl.OneNoteStrings.l_NoteTag_8 = 'Phone number';
+OneNoteIntl.OneNoteStrings.l_NoteTag_9 = 'Web site to visit';
+OneNoteIntl.OneNoteStrings.l_NoteTag_10 = 'Idea';
+OneNoteIntl.OneNoteStrings.l_NoteTag_11 = 'Password';
+OneNoteIntl.OneNoteStrings.l_NoteTag_12 = 'Critical';
+OneNoteIntl.OneNoteStrings.l_NoteTag_13 = 'Project A';
+OneNoteIntl.OneNoteStrings.l_NoteTag_14 = 'Project B';
+OneNoteIntl.OneNoteStrings.l_NoteTag_15 = 'Movie to see';
+OneNoteIntl.OneNoteStrings.l_NoteTag_16 = 'Book to read';
+OneNoteIntl.OneNoteStrings.l_NoteTag_17 = 'Music to listen to';
+OneNoteIntl.OneNoteStrings.l_NoteTag_18 = 'Source for article';
+OneNoteIntl.OneNoteStrings.l_NoteTag_19 = 'Remember for blog';
+OneNoteIntl.OneNoteStrings.l_NoteTag_20 = 'Discuss with <Person A>';
+OneNoteIntl.OneNoteStrings.l_NoteTag_21 = 'Discuss with <Person B>';
+OneNoteIntl.OneNoteStrings.l_NoteTag_22 = 'Discuss with manager';
+OneNoteIntl.OneNoteStrings.l_NoteTag_23 = 'Send in email';
+OneNoteIntl.OneNoteStrings.l_NoteTag_24 = 'Schedule meeting';
+OneNoteIntl.OneNoteStrings.l_NoteTag_25 = 'Call back';
+OneNoteIntl.OneNoteStrings.l_NoteTag_26 = 'To Do priority 1';
+OneNoteIntl.OneNoteStrings.l_NoteTag_27 = 'To Do priority 2';
+OneNoteIntl.OneNoteStrings.l_NoteTag_28 = 'Client request';
+OneNoteIntl.OneNoteStrings.l_NoteTag_OutlookTaskTooltip = 'Due date: {0:dddd, MMMM dd, yyyy}';
+OneNoteIntl.OneNoteStrings.l_NoteTag_OutlookTaskTooltipNoDueDate = 'No due date';
+OneNoteIntl.OneNoteStrings.L_faShare_FriendlyLabel = 'Share Notebook';
+OneNoteIntl.OneNoteStrings.L_faAbout_FriendlyLabel = 'About {appshort}';
+OneNoteIntl.OneNoteStrings.L_btnAltText_FriendlyLabel = 'Image Alt-Text';
+OneNoteIntl.OneNoteStrings.L_automatic_FriendlyLabel = 'Automatic font color';
+OneNoteIntl.OneNoteStrings.L_NT0_FriendlyLabel = 'To Do Tag';
+OneNoteIntl.OneNoteStrings.L_NT1_FriendlyLabel = 'Important Tag';
+OneNoteIntl.OneNoteStrings.L_NT2_FriendlyLabel = 'Question Tag';
+OneNoteIntl.OneNoteStrings.L_NT3_FriendlyLabel = 'Remember for later Tag';
+OneNoteIntl.OneNoteStrings.L_NT4_FriendlyLabel = 'Definition Tag';
+OneNoteIntl.OneNoteStrings.L_NT5_FriendlyLabel = 'Highlight Tag';
+OneNoteIntl.OneNoteStrings.L_NT6_FriendlyLabel = 'Contact Tag';
+OneNoteIntl.OneNoteStrings.L_NT7_FriendlyLabel = 'Address Tag';
+OneNoteIntl.OneNoteStrings.L_NT8_FriendlyLabel = 'Phone number Tag';
+OneNoteIntl.OneNoteStrings.L_NT9_FriendlyLabel = 'Web site to visit Tag';
+OneNoteIntl.OneNoteStrings.L_NT10_FriendlyLabel = 'Idea Tag';
+OneNoteIntl.OneNoteStrings.L_NT11_FriendlyLabel = 'Password Tag';
+OneNoteIntl.OneNoteStrings.L_NT12_FriendlyLabel = 'Critical Tag';
+OneNoteIntl.OneNoteStrings.L_NT13_FriendlyLabel = 'Project A Tag';
+OneNoteIntl.OneNoteStrings.L_NT14_FriendlyLabel = 'Project B Tag';
+OneNoteIntl.OneNoteStrings.L_NT15_FriendlyLabel = 'Movie to see Tag';
+OneNoteIntl.OneNoteStrings.L_NT16_FriendlyLabel = 'Book to read Tag';
+OneNoteIntl.OneNoteStrings.L_NT17_FriendlyLabel = 'Music to listen to Tag';
+OneNoteIntl.OneNoteStrings.L_NT18_FriendlyLabel = 'Source for article Tag';
+OneNoteIntl.OneNoteStrings.L_NT19_FriendlyLabel = 'Remember for blog Tag';
+OneNoteIntl.OneNoteStrings.L_NT20_FriendlyLabel = 'Discuss with <Person A> Tag';
+OneNoteIntl.OneNoteStrings.L_NT21_FriendlyLabel = 'Discuss with <Person B> Tag';
+OneNoteIntl.OneNoteStrings.L_NT22_FriendlyLabel = 'Discuss with manager Tag';
+OneNoteIntl.OneNoteStrings.L_NT23_FriendlyLabel = 'Send in email Tag';
+OneNoteIntl.OneNoteStrings.L_NT24_FriendlyLabel = 'Schedule meeting Tag';
+OneNoteIntl.OneNoteStrings.L_NT25_FriendlyLabel = 'Call back Tag';
+OneNoteIntl.OneNoteStrings.L_NT26_FriendlyLabel = 'To Do priority 1 Tag';
+OneNoteIntl.OneNoteStrings.L_NT27_FriendlyLabel = 'To Do priority 2 Tag';
+OneNoteIntl.OneNoteStrings.L_NT28_FriendlyLabel = 'Client request Tag';
+OneNoteIntl.OneNoteStrings.L_PeopleWell_Location_Unknown = 'Unknown location';
+OneNoteIntl.OneNoteStrings.L_PeopleWell_Location_ThisPage = 'This page';
+OneNoteIntl.OneNoteStrings.L_PeopleWell_Location_AnotherPage = 'Another page';
+OneNoteIntl.OneNoteStrings.L_PeopleWell_Location_AnotherSection = 'Another section';
+OneNoteIntl.OneNoteStrings.L_PeopleWell_Location_AnotherSectionGroup = 'Another section group';
+OneNoteIntl.OneNoteStrings.L_PeopleWell_StateUserIsAlsoHere = '{0} is also here';
+OneNoteIntl.OneNoteStrings.l_PeopleWell_NavigateToSectionGroupError = 'Sorry, {webappshort} can\'t jump to a page in a different section group.';
+OneNoteIntl.OneNoteStrings.L_Navigation_PinButton = 'Pin Button';
+OneNoteIntl.OneNoteStrings.L_Navigation_PinPane = 'Pin Pane';
+OneNoteIntl.OneNoteStrings.L_Navigation_UnpinPane = 'Unpin Pane';
+OneNoteIntl.OneNoteStrings.L_Navigation_ShowNotebooks = 'Show My Notebooks';
+OneNoteIntl.OneNoteStrings.L_NotebookSearch_NoSearchResultsFoundString = 'No search results found';
+OneNoteIntl.OneNoteStrings.L_NotebookSearch_SearchResultsHeaderString = 'Results from \'{0}\'';
+OneNoteIntl.OneNoteStrings.L_NotebookSearch_SearchBoxPlaceholderString = 'Search this notebook ({0}+{1})';
+OneNoteIntl.OneNoteStrings.L_NotebookSearch_HelperWarning = 'We couldn\'t complete your search. Please try again.';
+OneNoteIntl.OneNoteStrings.L_FileUploadButtonText = 'Insert';
+OneNoteIntl.OneNoteStrings.L_FileUploadingTitle = 'Insert File';
+OneNoteIntl.OneNoteStrings.L_FilePlaceholderText = 'Inserting...';
+OneNoteIntl.OneNoteStrings.L_FileNotInserted = 'File wasn\'t inserted.';
+OneNoteIntl.OneNoteStrings.L_InvalidFileSize = 'Files you insert must be bigger than zero bytes and less than {0} MB.';
+OneNoteIntl.OneNoteStrings.L_InvalidFileTitle = 'File invalid';
+OneNoteIntl.OneNoteStrings.L_FileAttachmentUploadingText = 'Inserting file attachment';
+OneNoteIntl.OneNoteStrings.L_InsertPrintoutPickerDialogHeader = 'Insert File Printout';
+OneNoteIntl.OneNoteStrings.L_InsertPrintoutPickerDialogBody = 'Select a Word or PDF Document.';
+OneNoteIntl.OneNoteStrings.L_InsertPrintoutUnsupportedDialogHeader = 'Unsupported file type';
+OneNoteIntl.OneNoteStrings.L_InsertPrintoutUnsupportedDialogBody = 'Please select a Word or PDF Document.';
+OneNoteIntl.OneNoteStrings.L_InsertPrintoutErrorDialogHeader = 'Unable to insert file printout';
+OneNoteIntl.OneNoteStrings.L_InsertPrintoutErrorDialogBody = 'There was a problem inserting this file printout. Please try again.';
+OneNoteIntl.OneNoteStrings.L_InsertPrintoutLoadingTooltip = 'Inserting the file printout...';
+OneNoteIntl.OneNoteStrings.L_InsertPrintoutLoadingText = 'Inserting file printout';
+OneNoteIntl.OneNoteStrings.L_Back15Seconds = 'Back 15 Seconds';
+OneNoteIntl.OneNoteStrings.L_Forward15Seconds = 'Forward 15 Seconds';
+OneNoteIntl.OneNoteStrings.L_Pause = 'Pause';
+OneNoteIntl.OneNoteStrings.L_Play = 'Play';
+OneNoteIntl.OneNoteStrings.L_Record = 'Record';
+OneNoteIntl.OneNoteStrings.L_RecordAudio = 'Record Audio';
+OneNoteIntl.OneNoteStrings.L_Stop = 'Stop';
+OneNoteIntl.OneNoteStrings.L_Loading = 'Loading';
+OneNoteIntl.OneNoteStrings.L_FileUnplayable = 'File unplayable';
+OneNoteIntl.OneNoteStrings.L_GroupPlayback = 'Playback';
+OneNoteIntl.OneNoteStrings.L_GroupRecording = 'Recording';
+OneNoteIntl.OneNoteStrings.L_TabAudio = 'Audio';
+OneNoteIntl.OneNoteStrings.L_TabRecordPlayback = 'Record & Playback';
+OneNoteIntl.OneNoteStrings.L_TabPlayback = 'Playback';
+OneNoteIntl.OneNoteStrings.L_RecordingWillStop = 'Recording will stop in {0} seconds';
+OneNoteIntl.OneNoteStrings.L_RecordingTimeLimit = 'Recordings must be {0} seconds or less';
+OneNoteIntl.OneNoteStrings.L_RecordingFailedUploadTitle = 'Recording failed';
+OneNoteIntl.OneNoteStrings.L_RecordingFailedUpload = 'Sorry, the recording didn\'t work. Please try again.';
+OneNoteIntl.OneNoteStrings.L_RecordingDeniedPermissionsTitle = 'Can\'t record audio';
+OneNoteIntl.OneNoteStrings.L_RecordingDeniedPermissions = 'Your browser is blocking access to the microphone. Click the lock icon in your browser\'s address bar and check your permissions.';
+OneNoteIntl.OneNoteStrings.L_RecordingDeviceNotFound = 'OneNote Online could not find any audio recording device. Make sure that an audio recording device is properly connected and try recording again.';
+OneNoteIntl.OneNoteStrings.L_PressEnterToPlay = 'Press ENTER to play audio';
+OneNoteIntl.OneNoteStrings.L_AudioTabTitle = OneNoteIntl.OneNoteStrings.L_TabRecordPlayback;
+OneNoteIntl.OneNoteStrings.L_Crop = 'Crop';
+OneNoteIntl.OneNoteStrings.L_NoAltTextRuleName = 'No alternative text';
+OneNoteIntl.OneNoteStrings.L_NoHyperlinkFriendlyTextRuleName = 'No friendly hyperlink text';
+OneNoteIntl.OneNoteStrings.L_UnclearHyperlinkFriendlyTextRuleName = 'No friendly hyperlink text';
+OneNoteIntl.OneNoteStrings.L_AccCheckerResultInstruction = 'To make this page more accessible for people with disabilities, select and fix the issues in the Inspection Results box.';
+OneNoteIntl.OneNoteStrings.L_AccCheckerAdditionalInfoContent = 'The Accessibility Checker inspected your page for all issues that can be fixed in the browser. For a complete inspection, open your page in the desktop app.';
+OneNoteIntl.OneNoteStrings.L_PageTitleLabel = 'Page Title';
+OneNoteIntl.OneNoteStrings.L_TellMeTryQuery01 = 'share my notebook';
+OneNoteIntl.OneNoteStrings.L_TellMeTryQuery02 = 'add a new page';
+OneNoteIntl.OneNoteStrings.L_TellMeTryQuery03 = 'print';
+OneNoteIntl.OneNoteStrings.L_TellMeTryQuery04 = 'change font color';
+OneNoteIntl.OneNoteStrings.L_TellMeTryQuery05 = 'check my spelling';
+OneNoteIntl.OneNoteStrings.L_Type = 'Type';
+OneNoteIntl.OneNoteStrings.L_MarqueeSelect = 'Marquee Select';
+OneNoteIntl.OneNoteStrings.L_Eraser = 'Eraser';
+OneNoteIntl.OneNoteStrings.L_Pen = 'Pen';
+OneNoteIntl.OneNoteStrings.L_Highlighter = 'Highlighter';
+OneNoteIntl.OneNoteStrings.L_InkColor = 'Ink Color';
+OneNoteIntl.OneNoteStrings.L_InkThickness = 'Thickness';
+OneNoteIntl.OneNoteStrings.L_TabDraw = 'Draw';
+OneNoteIntl.OneNoteStrings.L_GroupTools = 'Tools';
+OneNoteIntl.OneNoteStrings.L_GroupStyle = 'Style';
+OneNoteIntl.OneNoteStrings.L_Millimeters = 'mm';
+OneNoteIntl.OneNoteStrings.L_GroupColor = 'Color';
+OneNoteIntl.OneNoteStrings.L_InkColor_Red = 'Red';
+OneNoteIntl.OneNoteStrings.L_InkColor_Orange = 'Orange';
+OneNoteIntl.OneNoteStrings.L_InkColor_Gold = 'Gold';
+OneNoteIntl.OneNoteStrings.L_InkColor_Yellow = 'Yellow';
+OneNoteIntl.OneNoteStrings.L_InkColor_Green = 'Green';
+OneNoteIntl.OneNoteStrings.L_InkColor_DarkGreen = 'Dark Green';
+OneNoteIntl.OneNoteStrings.L_InkColor_LightGreen = 'Light Green';
+OneNoteIntl.OneNoteStrings.L_InkColor_SkyBlue = 'Sky Blue';
+OneNoteIntl.OneNoteStrings.L_InkColor_Blue = 'Blue';
+OneNoteIntl.OneNoteStrings.L_InkColor_Purple = 'Purple';
+OneNoteIntl.OneNoteStrings.L_InkColor_Pink = 'Pink';
+OneNoteIntl.OneNoteStrings.L_InkColor_Brown = 'Brown';
+OneNoteIntl.OneNoteStrings.L_InkColor_Black = 'Black';
+OneNoteIntl.OneNoteStrings.L_InkColor_DarkGray = 'Dark Gray';
+OneNoteIntl.OneNoteStrings.L_InkColor_LightGray = 'Light Gray';
+OneNoteIntl.OneNoteStrings.L_InkColor_White = 'White';
+OneNoteIntl.OneNoteStrings.L_PageColor_Blue = 'Blue';
+OneNoteIntl.OneNoteStrings.L_PageColor_Teal = 'Teal';
+OneNoteIntl.OneNoteStrings.L_PageColor_Green = 'Green';
+OneNoteIntl.OneNoteStrings.L_PageColor_Red = 'Red';
+OneNoteIntl.OneNoteStrings.L_PageColor_BlueMist = 'Blue Mist';
+OneNoteIntl.OneNoteStrings.L_PageColor_Cyan = 'Cyan';
+OneNoteIntl.OneNoteStrings.L_PageColor_Apple = 'Apple';
+OneNoteIntl.OneNoteStrings.L_PageColor_RedChalk = 'Red Chalk';
+OneNoteIntl.OneNoteStrings.L_PageColor_PurpleMist = 'Purple Mist';
+OneNoteIntl.OneNoteStrings.L_PageColor_Silver = 'Silver';
+OneNoteIntl.OneNoteStrings.L_PageColor_LemonLime = 'Lemon Lime';
+OneNoteIntl.OneNoteStrings.L_PageColor_Tan = 'Tan';
+OneNoteIntl.OneNoteStrings.L_PageColor_Purple = 'Purple';
+OneNoteIntl.OneNoteStrings.L_PageColor_Magenta = 'Magenta';
+OneNoteIntl.OneNoteStrings.L_PageColor_Yellow = 'Yellow';
+OneNoteIntl.OneNoteStrings.L_PageColor_Orange = 'Orange';
+OneNoteIntl.OneNoteStrings.L_NoPageColor = 'No Color';
+OneNoteIntl.OneNoteStrings.L_Math = 'Math';
+OneNoteIntl.OneNoteStrings.L_InkToMath = 'Ink to Math';
+OneNoteIntl.OneNoteStrings.L_FixIt = 'Fix it';
+OneNoteIntl.OneNoteStrings.L_FixItDone = 'Done';
+OneNoteIntl.OneNoteStrings.L_MathSolverDefaultAction = 'Select an action';
+OneNoteIntl.OneNoteStrings.L_MathSolverDefaultTemplate = 'Show steps';
+OneNoteIntl.OneNoteStrings.L_MathTutorialTitle = 'Get started with Math';
+OneNoteIntl.OneNoteStrings.L_MathTutorialOne = 'Write your equation in ink';
+OneNoteIntl.OneNoteStrings.L_MathTutorialOneOr = 'or type it using the keyboard';
+OneNoteIntl.OneNoteStrings.L_MathTutorialTwo = 'Select your equation';
+OneNoteIntl.OneNoteStrings.L_MathTutorialThree = 'Tap the Math button';
+OneNoteIntl.OneNoteStrings.L_MathNumberingOne = '1.';
+OneNoteIntl.OneNoteStrings.L_MathNumberingTwo = '2.';
+OneNoteIntl.OneNoteStrings.L_MathNumberingThree = '3.';
+OneNoteIntl.OneNoteStrings.L_MathRecognitionError = 'We couldn\'t recognize your equation. Please rewrite it and try again.';
+OneNoteIntl.OneNoteStrings.L_MathRecognitionAlternatesError = 'We couldn\'t get the alternates. Please try again.';
+OneNoteIntl.OneNoteStrings.L_MathSolverError = 'Sorry, we couldn\'t calculate this for you.';
+OneNoteIntl.OneNoteStrings.L_MathGraphShowKeyGraphFeatures = 'Key graph features';
+OneNoteIntl.OneNoteStrings.L_MathGraphShowAllKeyFeatures = 'Show all on graph';
+OneNoteIntl.OneNoteStrings.L_MathGraphTooComplexKeyGraphFeatures = 'These features are too complex for OneNote to calculate.';
+OneNoteIntl.OneNoteStrings.L_MathGraphTooComplexKeyGraphFeature = 'This feature is too complex for OneNote to calculate.';
+OneNoteIntl.OneNoteStrings.L_MathGraphInsertOnPage = 'Insert on page';
+OneNoteIntl.OneNoteStrings.L_MathGraphZoomIn = 'Zoom in';
+OneNoteIntl.OneNoteStrings.L_MathGraphZoomOut = 'Zoom out';
+OneNoteIntl.OneNoteStrings.L_MathGraphReset = 'Reset';
+OneNoteIntl.OneNoteStrings.L_MathGraphPanLeft = 'Move left';
+OneNoteIntl.OneNoteStrings.L_MathGraphPanUp = 'Move up';
+OneNoteIntl.OneNoteStrings.L_MathGraphPanRight = 'Move right';
+OneNoteIntl.OneNoteStrings.L_MathGraphPanDown = 'Move down';
+OneNoteIntl.OneNoteStrings.L_MathGraphIncreaseParameter = 'Increase parameter \"{0}\"';
+OneNoteIntl.OneNoteStrings.L_MathGraphDecreaseParameter = 'Decrease parameter \"{0}\"';
+OneNoteIntl.OneNoteStrings.L_MathGraphShowAll = 'Show all on graph';
+OneNoteIntl.OneNoteStrings.L_MathGraphHideAll = 'Hide all on graph';
+OneNoteIntl.OneNoteStrings.L_MathGraphShowKeyGraphFeature = 'Show {0} on graph';
+OneNoteIntl.OneNoteStrings.L_MathGraphHideKeyGraphFeature = 'Hide {0} on graph';
+OneNoteIntl.OneNoteStrings.L_MathSettingsSolving = 'Solving';
+OneNoteIntl.OneNoteStrings.L_MathSettingsSolveFor = 'Solve for';
+OneNoteIntl.OneNoteStrings.L_MathSettingsRealNumbers = 'Real numbers';
+OneNoteIntl.OneNoteStrings.L_MathSettingsComplexNumbers = 'Complex numbers';
+OneNoteIntl.OneNoteStrings.L_MathSettingsAngleMeasurement = 'Angle measurement';
+OneNoteIntl.OneNoteStrings.L_MathSettingsDegrees = 'Degrees';
+OneNoteIntl.OneNoteStrings.L_MathSettingsRadians = 'Radians';
+OneNoteIntl.OneNoteStrings.L_MathSettingsGradians = 'Gradians';
+OneNoteIntl.OneNoteStrings.L_MathSettingsBack = 'Back';
+OneNoteIntl.OneNoteStrings.L_MathSettings = 'Settings';
+OneNoteIntl.OneNoteStrings.L_MathSettingsTitle = 'Math settings';
+OneNoteIntl.OneNoteStrings.L_MathReader = 'Open in Immersive reader';
+OneNoteIntl.OneNoteStrings.L_MathOptions = 'Math Options';
+OneNoteIntl.OneNoteStrings.L_MathSolutionSteps = 'Solution steps';
+OneNoteIntl.OneNoteStrings.L_MathGraphing = 'Graphing';
+OneNoteIntl.OneNoteStrings.L_MathSwitchTutorial = 'Turn selected Math features on or off for students in the current notebook.';
+OneNoteIntl.OneNoteStrings.L_MathSwitchTimeoutWarning = 'All features will be active in less than 10 minutes.';
+OneNoteIntl.OneNoteStrings.L_MathSwitchTimeout = 'Timeout:';
+OneNoteIntl.OneNoteStrings.L_MathSwitchRemainingTime = 'Time Remaining:';
+OneNoteIntl.OneNoteStrings.L_MathSwitchMinutes = 'min';
+OneNoteIntl.OneNoteStrings.L_MathSwitchApply = 'Apply';
+OneNoteIntl.OneNoteStrings.L_MathSwitchInputInfo = 'Click the timer to change the countdown timeout.';
+OneNoteIntl.OneNoteStrings.L_MathSwitchAllMathFeaturesOff = 'All Math features are currently turned off.';
+OneNoteIntl.OneNoteStrings.L_MathSwitchSolvingOff = 'Solving is currently turned off.';
+OneNoteIntl.OneNoteStrings.L_MathSwitchStepsOff = 'Solution Steps are currently turned off.';
+OneNoteIntl.OneNoteStrings.L_MathSwitchGraphingOff = 'Graphing is currently turned off.';
+OneNoteIntl.OneNoteStrings.L_MathSwitchKGFOff = 'Key Graphs Features are currently turned off.';
+OneNoteIntl.OneNoteStrings.L_MathDragSolution = 'Drag solution to page';
+OneNoteIntl.OneNoteStrings.L_MathDragSteps = 'Drag steps to page';
+OneNoteIntl.OneNoteStrings.L_MathMoreSteps = 'More steps...';
+OneNoteIntl.OneNoteStrings.L_MathSwitchError = 'Unable to establish connection, check your connection and try again.';
+OneNoteIntl.OneNoteStrings.L_MathSwitchTryAgain = 'Try again';
+OneNoteIntl.OneNoteStrings.L_MathSwitchTurnOnOff = 'Turn Math On or Off';
+OneNoteIntl.OneNoteStrings.L_MathQuickStartExamples = 'Quick Start Examples';
+OneNoteIntl.OneNoteStrings.L_MathGenerateQuiz = 'Generate a practice quiz';
+OneNoteIntl.OneNoteStrings.L_MathFeedback = 'Feedback';
+OneNoteIntl.OneNoteStrings.L_OnboardingCalloutTxt = 'Click anywhere to start writing';
+OneNoteIntl.OneNoteStrings.L_OnboardingCalloutAriaLabel = 'Press enter to start writing on the {subdoctype}';
+OneNoteIntl.OneNoteStrings.L_BookmarkCalloutLabel = 'Click {0} to bookmark this notebook';
+OneNoteIntl.OneNoteStrings.L_BookmarkCalloutAriaLabel = 'Press Control D to bookmark this notebook';
+OneNoteIntl.OneNoteStrings.L_TextMeInvalidNumber = 'Enter a valid 10 digit phone number (123\u2013123-1234)';
+OneNoteIntl.OneNoteStrings.L_TextMeInputPlaceHolder = 'Enter US phone number';
+OneNoteIntl.OneNoteStrings.L_TextMeGetAppForFree = 'Never leave your notes behind. Get OneNote mobile, free.';
+OneNoteIntl.OneNoteStrings.L_TextMeSendLinkButton = 'Send Link';
+OneNoteIntl.OneNoteStrings.L_TextMeDisclaimerText1 = 'We won\'t store your number';
+OneNoteIntl.OneNoteStrings.L_TextMeDisclaimerText2 = 'Standard SMS charges may apply';
+OneNoteIntl.OneNoteStrings.L_TextMeReadMore = 'More';
+OneNoteIntl.OneNoteStrings.L_TextMeReadLess = 'Less';
+OneNoteIntl.OneNoteStrings.L_TextMeLinkSentTo = 'Link sent to {0}';
+OneNoteIntl.OneNoteStrings.L_GroupOnlineMedia = 'Media';
+OneNoteIntl.OneNoteStrings.L_InsertEmbeddedVideo = 'Online Video';
+OneNoteIntl.OneNoteStrings.L_InsertEmbeddedVideoDialogTitle = 'Insert Online Video';
+OneNoteIntl.OneNoteStrings.L_VideoAddress = 'Video address';
+OneNoteIntl.OneNoteStrings.L_VideoInsert = 'Insert Video';
+OneNoteIntl.OneNoteStrings.L_SupportedVideoSources = 'View supported Video';
+OneNoteIntl.OneNoteStrings.L_VideoUnsupportedError = 'This video source isn\'t supported yet.';
+OneNoteIntl.OneNoteStrings.L_VideoNotFoundError = 'No video found with this address. Please try again.';
+OneNoteIntl.OneNoteStrings.L_ThumbnailAltText = '{0} web content';
+OneNoteIntl.OneNoteStrings.L_ThumbnailAltTextTitled = '{0} web content titled: {1}';
+OneNoteIntl.OneNoteStrings.L_ThumbnailAltTextVideo = 'Video';
+OneNoteIntl.OneNoteStrings.L_ThumbnailAltTextRich = 'Rich';
+OneNoteIntl.OneNoteStrings.L_QuotaExceededInOneDrive = 'This notebook is stored in a OneDrive that\u2019s full. Ask the owner to free up space so you can continue editing.';
+OneNoteIntl.OneNoteStrings.L_QuotaExceededInSPO = 'This notebook is stored on a SharePoint location that\u2019s full. Free up space so you can continue editing.';
+OneNoteIntl.OneNoteStrings.L_ContentAppError = 'Cannot insert add-in here. Please click somewhere else on the page and try inserting the add-in again.';
+OneNoteIntl.OneNoteStrings.L_Move = 'Move';
+OneNoteIntl.OneNoteStrings.L_MoveOrCopyContextualMenuItem = 'Move/Copy';
+OneNoteIntl.OneNoteStrings.L_MoveOrCopyDialogTitle = 'Move/Copy Page';
+OneNoteIntl.OneNoteStrings.L_MoveOrCopyIntroLabel = 'Move or copy this page to another location';
+OneNoteIntl.OneNoteStrings.L_CopyPageSucceedToastMessage = 'Page \"{0}\" was copied to {1}.';
+OneNoteIntl.OneNoteStrings.L_MoveOrCopyPageFailureToastMessage = 'Page \"{0}\" couldn\'t be moved/copied to {1}. Please try again.';
+OneNoteIntl.OneNoteStrings.L_GetSectionUrlOptionText = 'Copy Link to Section';
+OneNoteIntl.OneNoteStrings.L_HyperlinkWebViewText = 'Web view';
+OneNoteIntl.OneNoteStrings.L_ChooseFileTypeDialogTitle = 'How do you want to attach this file?';
+OneNoteIntl.OneNoteStrings.L_AttachACopy = 'Attach a copy';
+OneNoteIntl.OneNoteStrings.L_AttachACopyExplanation = 'Attach a copy directly into {appshort}. Online access is not required for viewing';
+OneNoteIntl.OneNoteStrings.L_AttachAsOneDriveFile = 'Attach as a OneDrive file';
+OneNoteIntl.OneNoteStrings.L_AttachAsOneDriveFileExplanation = 'Upload to your OneDrive to access and collaborate from anywhere. Online access is required for viewing.';
+OneNoteIntl.OneNoteStrings.L_OfflineAccessRequired = 'No thanks, I need offline access';
+OneNoteIntl.OneNoteStrings.L_TryStickyNotes = 'Try {0}';
+OneNoteIntl.OneNoteStrings.L_SyncOfflineButtonText = 'Offline';
+OneNoteIntl.OneNoteStrings.L_SyncErrorUnsavedChanges = 'Unsaved Changes';
+OneNoteIntl.OneNoteStrings.L_SyncErrorInternalButtonText = 'Internal error';
+OneNoteIntl.OneNoteStrings.L_SyncErrorPermissionsButtonText = 'Permissions required';
+OneNoteIntl.OneNoteStrings.L_SyncErrorOutOfStorageButtonText = 'Out of Cloud Storage';
+OneNoteIntl.OneNoteStrings.L_SyncSuccessfulCalloutTitle = 'Page saved';
+OneNoteIntl.OneNoteStrings.L_SyncSuccessfulCalloutContent = 'Page last synced just now';
+OneNoteIntl.OneNoteStrings.L_SyncInProgressCalloutTitle = 'Syncing...';
+OneNoteIntl.OneNoteStrings.L_SyncOfflineWithInMinCalloutContent = 'We\'re trying to reconnect...';
+OneNoteIntl.OneNoteStrings.L_SyncOfflineAfterMinCalloutContent = 'You don\u2019t appear to be connected to the Internet. We\u2019ll sync your notes when you\u2019re back online.';
+OneNoteIntl.OneNoteStrings.L_SyncOfflineUnsavedChangesCalloutContent = 'You don\u2019t appear to be connected to the Internet. To prevent losing unsaved changes, don\u2019t close this tab until you are reconnected.';
+OneNoteIntl.OneNoteStrings.L_SyncErrorUnsavedChangesCalloutContent = 'OneNote can\u2019t sync this page. To prevent losing unsaved changes, don\u2019t close this tab until you are reconnected.';
+OneNoteIntl.OneNoteStrings.L_SyncErrorInternalCalloutContent = 'An error has occurred and OneNote can\u2019t sync this page.';
+OneNoteIntl.OneNoteStrings.L_SyncErrorPermissionsCalloutContent = 'You don\u2019t have permission to view or make changes to this notebook from {0}. We\u2019ll sync again if your permissions are restored.';
+OneNoteIntl.OneNoteStrings.L_SyncErrorPermissionsReadOnlyCalloutContent = 'You don\u2019t have permission to make changes to this notebook from {0}. We\u2019ll sync again if your permissions are restored.';
+OneNoteIntl.OneNoteStrings.L_SyncErrorOutOfStorageCalloutContent = 'OneNote can\'t sync your notes because your account is out of space.';
+OneNoteIntl.OneNoteStrings.L_SyncLastSuccessfulTime = 'Page last synced at {0}';
+OneNoteIntl.OneNoteStrings.L_SyncTryAgain = 'Try Again';
+OneNoteIntl.OneNoteStrings.L_SyncErrorLearnMore = 'Learn More';

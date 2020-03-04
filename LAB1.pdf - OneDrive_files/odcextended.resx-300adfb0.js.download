@@ -1,0 +1,1 @@
+define("odsp-next/controls/componentCarousel/ComponentCarousel.resx",["exports"],function(e){e.strings=e.default={"NextAria":"Click to view next set of cards","PrevAria":"Click to view previous set of cards","carouselNavButtonAriaLabel":"View explore your photo cards {0} to {1}"}})

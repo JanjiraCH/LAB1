@@ -1,0 +1,165 @@
+define("@ms/items-view/lib/private/components/base/actions/rename/RenameAction.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "fileNameLabel":"File name",
+    "folderNameLabel":"Folder name" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view/lib/private/components/commands/clearSelection/ClearSelectionCommand.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "ClearSelectionCommandText":"{0} selected",
+    "ClearSelectionCommandTextIntervals":"1-",
+    "ClearSelectionCommandAriaLabel":"{0} selected. Use Enter key to clear selection.",
+    "ClearSelectionCommandAriaLabelIntervals":"1-",
+    "ClearSelectionShortcut":"ctrl + d",
+    "ClearSelectionShortcutDesc":"Deselect all the selected items" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view/lib/private/components/scope/commands/commands.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "CreateFolder":"Folder",
+    "CreateWord":"Word document",
+    "CreateExcel":"Excel workbook",
+    "CreatePowerPoint":"PowerPoint presentation",
+    "CreateOneNote":"OneNote notebook",
+    "CreateVisio":"Visio drawing",
+    "CreateExcelSurvey":"Excel survey",
+    "CreateFormForExcel":"Forms for Excel",
+    "CreateBohemia":"Bohemia",
+    "CreatePrague":"Prague" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view/lib/private/components/progress/ProgressStrings.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "progressTitle":"Progress",
+    "progressCloseActionText":"Close",
+    "progressCloseAllActionText":"Close all",
+    "progressViewAllActionText":"View all",
+    "progressRetryActionText":"Retry",
+    "progressRetryAllActionText":"Retry all",
+    "progressReplaceActionText":"Replace",
+    "progressAddNewVersionActionText":"Add file",
+    "progressReplaceAllActionText":"Replace all",
+    "progressRenameActionText":"Keep both",
+    "progressRenameAllActionText":"Keep all",
+    "progressNoItemsMessage":"There are no operations which require your attention.",
+    "genericStartedItemsTitle":"Updating {0} item||Updating {0} items",
+    "genericStartedItemsTitleIntervals":"1||2-",
+    "genericCompletedItemsTitle":"Updated {0} item||Updated {0} items",
+    "genericCompletedItemsTitleIntervals":"1||2-",
+    "genericFailedItemsTitle":"{0} item wasn't updated||{0} items weren't updated",
+    "genericFailedItemsTitleIntervals":"1||2-",
+    "genericFailedDescription":"Sorry, something went wrong.",
+    "genericCanceledDescription":"Canceled",
+    "genericCreatedDescription":"Waiting",
+    "genericStartedIndeterminateDescription":"Calculating...",
+    "genericStartedByteProgressDescription":"{0} of {1}",
+    "genericCompletedDescription":"Done",
+    "percentCompletedDescription":"{0} percent completed",
+    "percentCompletedDescriptionIntervals":"1",
+    "progresslistCancelButtonAriaLabel":"Cancel operation",
+    "progresslistRemoveButtonAriaLabel":"Clear notification",
+    "showActionDetailsPanelAccessibleHint":"Use shortcut key g to open the action details panel." 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view/lib/private/components/confirmationDialog/ConfirmationDialog.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "yes":"Yes",
+    "no":"No" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view/lib/private/components/itemsContextMenu/ActionContextMenu.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "More":"More" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view/lib/private/components/nameDialog/NameDialog.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "continue":"Continue" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view/lib/private/operations/deleteItems/DeleteStrings.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "deleteStartedItemsTitle":"Deleting {0} item||Deleting {0} items",
+    "deleteStartedItemsTitleIntervals":"1||2-",
+    "deleteStartedItemsDestinationTitle":"Deleting {0} item from {1}||Deleting {0} items from {1}",
+    "deleteStartedItemsDestinationTitleIntervals":"1||2-",
+    "deleteCompletedItemsTitle":"Deleted {0} item||Deleted {0} items",
+    "deleteCompletedItemsTitleIntervals":"1||2-",
+    "deleteCompletedItemsDestinationTitle":"Deleted {0} item from {1}||Deleted {0} items from {1}",
+    "deleteCompletedItemsDestinationTitleIntervals":"1||2-",
+    "deleteFailedItemsTitle":"{0} item wasn't deleted||{0} items weren't deleted",
+    "deleteFailedItemsTitleIntervals":"1||2-",
+    "deleteFailedItemsDestinationTitle":"{0} item wasn't deleted from {1}||{0} items weren't deleted from {1}",
+    "deleteFailedItemsDestinationTitleIntervals":"1||2-",
+    "deleteConfirmButtonText":"Delete",
+    "deleteCancelButtonText":"Cancel",
+    "fileLockedConfirmDeleteText":"It looks like someone has the file open. Delete anyway?" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view/lib/private/operations/renameItem/RenameStrings.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "renameStartedItemsTitle":"Renaming {0} item||Renaming {0} items",
+    "renameStartedItemsTitleIntervals":"1||2-",
+    "renameStartedItemsDestinationTitle":"Renaming {0} item in {1}||Renaming {0} items in {1}",
+    "renameStartedItemsDestinationTitleIntervals":"1||2-",
+    "renameCompletedItemsTitle":"Renamed {0} item||Renamed {0} items",
+    "renameCompletedItemsTitleIntervals":"1||2-",
+    "renameCompletedItemsDestinationTitle":"Renamed {0} item in {1}||Renamed {0} items in {1}",
+    "renameCompletedItemsDestinationTitleIntervals":"1||2-",
+    "renameFailedItemsTitle":"{0} item wasn't renamed||{0} items weren't renamed",
+    "renameFailedItemsTitleIntervals":"1||2-" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view-addon-photos/lib/components/allPhotosTilesList/AllPhotosTilesList.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "TileListAriaLabel":"Tile list" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view-addon-photos/lib/components/groupHeader/GroupHeader.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "locationmoreLabel":"{0} & {1} more",
+    "GroupHeaderAriaLabel":"Select all {0} photos" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("@ms/items-view-addon-photos/lib/components/image/Image.resx",["exports"],function(e){
+  Object.defineProperty(e, "__esModule", { value: true });
+  var strings = {
+    "toggleSelectionAriaLabel":"{0} toggle" 
+  };
+  e.strings = strings;
+  e.default = strings;
+});
+define("odsp-next/controls/promotedPhotos/PromotedPhotos.resx",["exports"],function(e){e.strings=e.default={"exploreRecentPhotosTitle":"Explore your photos","exploreRecentPhotosLabel":"Explore your Photos; grouped by tag, album, place, or those shared with you","onThisDayTitle":"On this day","seeAllTitle":"See all","autoAlbumCardTitle":"Created for you!","recentTagsTitle":"Recent tags","recentPlacesTitle":"Recent places","sharedAlbumTitle":"Shared with you","shareActionTitle":"Share","ItemTileCardArialabel":"{0} {1} of {2} "}})
